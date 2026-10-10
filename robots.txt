@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sortcut.co/sitemap.xml
