@@ -67,7 +67,7 @@
     function later(fn, ms){ timers.push(setTimeout(fn, ms)); }
 
     function setUnsortedLabels(){
-      chip.className = "chip"; chipT.textContent = "Newest first"; info.textContent = "1,377 posts";
+      chip.className = "chip"; chipT.textContent = "Newest first"; info.textContent = "1,377 reels";
     }
     function finish(){
       tiles.forEach(function(t){ t.style.setProperty("--d", ((+t.dataset.rank - 1) * 70) + "ms"); });
@@ -91,7 +91,7 @@
       var offset = 0;
       if (isSorted) { flip(newest, 380); offset = 420; }
       isSorted = false;
-      chip.className = "chip busy"; chipT.textContent = "Sorting…"; info.textContent = "Reading " + label(depth).toLowerCase() + " posts";
+      chip.className = "chip busy"; chipT.textContent = "Sorting…"; info.textContent = "Reading " + label(depth).toLowerCase() + " reels";
       stateEl.textContent = "Scanning";
 
       var total = 2300, start = null, target = depth >= 1377 ? 1377 : depth;
@@ -124,7 +124,7 @@
         depth = +b.dataset.n;
         bar.style.width = "0"; setCount(0); stateEl.textContent = "Ready";
         btn.textContent = "Sort this profile";
-        if (isSorted) { info.textContent = "Press sort to re-rank " + label(depth).toLowerCase() + " posts"; }
+        if (isSorted) { info.textContent = "Press sort to re-rank " + label(depth).toLowerCase() + " reels"; }
       });
     });
 
