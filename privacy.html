@@ -41,48 +41,109 @@
 <main class="wrap">
 
   <article class="doc">
-    <div class="doc-head"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p class="meta">Effective 27 September 2026</p></div>
+    <div class="doc-head"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p class="meta">Last updated 11 November 2026</p></div>
     <div class="doc-body">
-      <div class="tldr"><p><strong>In short:</strong> sorting and exporting happen entirely in your browser. The only things that reach our servers are your account details, your subscription status, and the audio of reels you choose to transcribe. We never sell your data.</p></div>
+      <div class="tldr"><p><strong>In short:</strong> sorting happens in your browser, so the Instagram profiles and reels you sort never reach our servers. We only receive your Google sign-in details, your plan and payments, and the reels you choose to transcribe. No analytics, no ads, and we never sell your data.</p></div>
+
       <h2>1. Who we are</h2>
-      <p>Sortcut is run by Current Culture. This policy explains what we collect through sortcut.co and the Sortcut Chrome extension, and why. It is written to comply with the Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000.</p>
+      <p>Sortcut is a product of <strong>Current Culture</strong>, a business run by its proprietor, Kartik, in Sirsa, Haryana, India. "We" and "us" mean Current Culture. This policy covers sortcut.co, the account dashboard at accounts.sortcut.co and the Sortcut browser extension. It is written to meet India's Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000.</p>
+
       <h2>2. What we collect</h2>
       <ul>
-        <li><strong>Account details:</strong> your name, email address and profile picture from Google sign-in.</li>
-        <li><strong>Subscription details:</strong> your plan, billing dates, payment status and the Razorpay transaction reference. We never receive card numbers, UPI PINs or bank logins.</li>
-        <li><strong>Transcription usage:</strong> the link of each reel you transcribe, its audio (processed, not kept), the time, and your monthly count.</li>
-        <li><strong>Support messages</strong> you send us.</li>
+        <li><strong>Google sign-in:</strong> your name, email address, Google account ID and the link to your Google profile picture. You only sign in to buy Pro or to export to Google Sheets. Sorting on the Free plan needs no account.</li>
+        <li><strong>Your plan and usage:</strong> your plan, billing dates, subscription status, and how many transcriptions you've used in each billing period.</li>
+        <li><strong>Payment records:</strong> Razorpay's payment and subscription IDs, amounts, dates, and the tax invoices and credit notes we issue to you.</li>
+        <li><strong>Business details, if you add them:</strong> your GSTIN, your business's legal name and its billing address, so we can print them on your tax invoices. These are optional.</li>
+        <li><strong>Email delivery records:</strong> whether each email we sent you was delivered or bounced.</li>
+        <li><strong>Messages you send us</strong> at support@sortcut.co.</li>
       </ul>
-      <h2>3. What we don't collect</h2>
-      <p>The profiles you view, the posts you sort and the files you export stay in your browser and are never sent to us. We don't collect your Instagram password or browsing history, and the extension has no analytics or ad trackers.</p>
-      <h2>4. How we use it</h2>
+
+      <h2>3. What we never collect</h2>
       <ul>
-        <li>To sign you in and provide the features you pay for.</li>
-        <li>To process payments and apply the monthly transcription limit.</li>
-        <li>To email you about billing, renewals and important changes.</li>
-        <li>To answer support requests and prevent abuse.</li>
+        <li><strong>The Instagram profiles and reels you sort.</strong> Sorting runs in your browser. The profiles you open, the reels you sort, their numbers and the files you export never reach our servers.</li>
+        <li><strong>Your Instagram password.</strong> Sortcut works in your own browser, where you're already logged in to Instagram.</li>
+        <li><strong>Your card or UPI details.</strong> Razorpay handles them (see section 6).</li>
+        <li><strong>Analytics or tracking.</strong> There are no analytics, ad trackers or tracking pixels on sortcut.co, on accounts.sortcut.co or in the extension.</li>
       </ul>
-      <h2>5. Who we share it with</h2>
+      <p>The extension keeps its settings, your sign-in and your latest sort in your browser's own storage, on your computer.</p>
+
+      <h2>4. Transcription</h2>
+      <p>Transcription is part of Pro, and happens only when you click Transcribe on a reel:</p>
       <ul>
-        <li><strong>Razorpay</strong>, to process payments.</li>
-        <li><strong>Groq</strong>, which turns reel audio into text for us. Audio is sent only when you click Transcribe.</li>
-        <li><strong>Amazon Web Services</strong>, which hosts our servers.</li>
-        <li><strong>Google</strong>, for sign-in.</li>
-        <li>Government authorities, when the law requires it.</li>
+        <li>The extension downloads the reel's audio from Instagram in your browser and uploads it to our server, along with the reel's short code (the ID in its link). If Instagram doesn't offer the audio on its own, the extension uploads the reel's video file instead.</li>
+        <li>Our server sends the audio to <strong>Groq</strong>, our transcription provider, which turns the speech into text. For Hindi, Groq also writes the text out in Latin script (Hinglish).</li>
+        <li>We delete the audio as soon as the transcript is ready. A storage rule removes anything left behind within 1 day.</li>
+        <li>We keep the transcript for <strong>30 days</strong>, so that opening the same reel again doesn't use up another transcription. After that it's deleted.</li>
       </ul>
-      <p>We don't sell or rent personal data.</p>
-      <h2>6. How long we keep it</h2>
-      <p>Reel audio is deleted as soon as the transcript is ready. Account and billing records are kept while your account is active, and for up to 8 years afterwards where tax law requires it. Everything else is deleted within 90 days of closing your account.</p>
-      <h2>7. Your rights</h2>
-      <p>You can ask to see, correct or delete your personal data, or withdraw consent, by emailing support@sortcut.co. We respond within 30 days.</p>
-      <h2>8. Security</h2>
-      <p>Data is encrypted in transit. Only the people who need access to run the Service have it.</p>
-      <h2>9. Children</h2>
+
+      <h2>5. Anonymous error reports (optional)</h2>
+      <p>If a sort fails in a way that may mean Instagram changed something, the extension may ask whether you want to send us an anonymous error report. <strong>Nothing is sent unless you click to send it.</strong></p>
+      <p>A report contains only: the type of error, the version of the extension and of its sorting rules, your browser and its version, and counts from the sort (such as how many reels were found, how many times the page scrolled and how long it took). It contains no profile, reel, link, account, email address or IP address, and it's sent without your sign-in. Reports are deleted after 90 days.</p>
+
+      <h2>6. Payments</h2>
+      <p>Payments are handled by <strong>Razorpay</strong>. You enter your card or UPI details in Razorpay's checkout, and we never see or store them. We give Razorpay your name and email address to fill in the checkout for you.</p>
+      <p>We keep Razorpay's payment and subscription IDs, the amounts and dates you paid, and the tax invoices and credit notes we issue. Razorpay may also email you directly about your payments and AutoPay. Razorpay's own privacy policy covers the data it holds.</p>
+
+      <h2>7. Tax records</h2>
+      <p>GST law requires us to keep our tax invoices and credit notes. We keep them, with the buyer details printed on them (your name and email address, and your GSTIN, business name and billing address if you added them), for as long as GST law requires. <strong>This applies even after you delete your account.</strong></p>
+
+      <h2>8. Emails</h2>
+      <p>We only email you:</p>
+      <ul>
+        <li>a welcome email when you first sign in,</li>
+        <li>a receipt with your tax invoice after each payment, and a credit note if we refund you,</li>
+        <li>emails about your account, such as important changes to this policy, and replies when you write to us.</li>
+      </ul>
+      <p>App emails are sent through Amazon SES. We never send marketing emails or newsletters. If an email to you bounces, we stop sending to that address.</p>
+
+      <h2>9. Google Sheets export</h2>
+      <p>Exporting to Google Sheets asks Google for one permission, <strong>drive.file</strong>. It lets Sortcut create files in your Google Drive and see only the files Sortcut created, and nothing else in your Drive. The sheet goes from your browser straight to your own Drive. It never passes through our servers, and the Drive permission stays in your browser.</p>
+      <p>Exporting to Sheets also signs you in to Sortcut, so we receive the Google sign-in details in section 2. CSV, JSON and Excel exports are made in your browser and need no sign-in.</p>
+      <p>Sortcut's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>10. Where your data is stored, and who processes it</h2>
+      <ul>
+        <li><strong>Amazon Web Services</strong>, in Sydney, Australia: our servers, our database, uploaded audio until it's deleted, and our app emails (Amazon SES).</li>
+        <li><strong>Groq</strong>: transcription (section 4).</li>
+        <li><strong>Razorpay</strong>: payments (section 6).</li>
+        <li><strong>Google</strong>: sign-in, and our support mailbox.</li>
+        <li><strong>Vercel</strong>: hosts sortcut.co and accounts.sortcut.co.</li>
+      </ul>
+      <p>This means your data is stored and processed outside India. We don't sell or rent personal data. We share it with government authorities only when the law requires it.</p>
+
+      <h2>11. Cookies</h2>
+      <ul>
+        <li><strong>One sign-in cookie, for accounts.sortcut.co only.</strong> When you sign in to the account dashboard, our server sets one cookie that keeps you signed in for up to 60 days. Scripts on the page can't read it, and it's sent only to our own server.</li>
+        <li><strong>No analytics, advertising or tracking cookies</strong>, anywhere. sortcut.co sets no cookies at all.</li>
+        <li>On the checkout page only, Razorpay's payment window may set its own cookies to process your payment.</li>
+        <li>sortcut.co loads its font from Google Fonts, so Google receives your IP address when a page loads.</li>
+      </ul>
+
+      <h2>12. How long we keep it</h2>
+      <ul>
+        <li><strong>Account, plan and usage details:</strong> until you delete your account.</li>
+        <li><strong>Sign-in sessions:</strong> 60 days.</li>
+        <li><strong>Uploaded audio:</strong> deleted when the transcript is ready, and within 1 day at most.</li>
+        <li><strong>Transcripts:</strong> 30 days. <strong>Transcription job records</strong> (the reel's code and the job's status): 7 days. <strong>Error reports:</strong> 90 days. <strong>Email delivery records:</strong> 1 year. <strong>Server logs:</strong> up to 14 days.</li>
+        <li><strong>Payment records, invoices and credit notes:</strong> for as long as GST law requires (section 7).</li>
+      </ul>
+      <p>Our database keeps rolling backups for 35 days, so deleted data can stay in a backup for up to 35 days before it's gone for good.</p>
+
+      <h2>13. Your rights</h2>
+      <p>Under India's Digital Personal Data Protection Act, 2023, you can ask to see the personal data we hold about you, correct it, or delete it, and you can withdraw your consent. Email <a href="mailto:support@sortcut.co">support@sortcut.co</a> from the address on your account. When you delete your account, we cancel any subscription, erase your data and keep only the tax records in section 7. We respond within 30 days.</p>
+      <p><strong>Grievance contact:</strong> Kartik Chaudhry, <a href="mailto:support@sortcut.co">support@sortcut.co</a>. See <a href="contact.html">Contact us</a> for our full address and phone number. If we don't resolve your complaint, you can take it to the Data Protection Board of India.</p>
+
+      <h2>14. Security</h2>
+      <p>All data is encrypted in transit, and uploaded audio is encrypted at rest. Sign-in tokens are stored only in a scrambled (hashed) form, so a copy of our database can't be used to sign in as you. Only the people who need access to run Sortcut have it.</p>
+
+      <h2>15. Children</h2>
       <p>Sortcut isn't meant for anyone under 18, and we don't knowingly collect their data.</p>
-      <h2>10. Changes</h2>
+
+      <h2>16. Changes</h2>
       <p>If we change this policy in a meaningful way, we'll email account holders before the change takes effect.</p>
-      <h2>11. Contact</h2>
-      <p>Grievance officer: Kartik Chaudhry, support@sortcut.co, +91 85708 13477.</p>
+
+      <h2>17. Business details</h2>
+      <p>Current Culture (proprietor: Kartik), Sirsa, Haryana, India. Email: <a href="mailto:support@sortcut.co">support@sortcut.co</a>. See <a href="contact.html">Contact us</a> for our full address and phone number.</p>
     </div>
   </article>
 
