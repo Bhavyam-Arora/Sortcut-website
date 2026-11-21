@@ -51,6 +51,8 @@ p{margin:0}
 .nav a.btn,.nav a.btn:hover{color:#fff}
 .soon{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;background:var(--bg-2);font-size:14px;font-weight:600;color:var(--ink);white-space:nowrap}
 .soon::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ig-btn)}
+.nav a.soon{color:var(--ink)}
+.nav a.soon:hover{background:#EDEBF1}
 @media (max-width:780px){.nav a.hide-sm{display:none}}
 
 /* ---------- buttons ---------- */
